@@ -6,6 +6,7 @@ body {
     background-color: aqua;
     text-align: center;
     font-family: "Lobster Two", cursive;
+    box-sizing: border-box;
 }
 
 img {
