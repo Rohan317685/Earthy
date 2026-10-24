@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 2rem 0;
+    min-height: 100vh;
+    position: relative;
+    background-color: aqua;
+    text-align: center;
+    font-family: "Lobster Two", cursive;
+}
+
+img {
+    width: 400px;
+    height: 100%;
+}
+
+#app {
+    max-width: 700px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+body::before,
+body::after {
+    content: "";    
+    position: fixed;
+    top: 0;
+    width: 150px;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+body::before {
+    left: 0;
+    clip-path: polygon(0 0, 20% 21%, 47% 51%, 0 100%, 0 54%);
+}
+
+body::after {
+    right: 0;
+    clip-path: polygon(0 0, 20% 21%, 47% 51%, 0 100%, 0 54%);
+    transform: scaleX(-1);
+}
